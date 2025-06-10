@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Paws Pet Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f8f9fa; }
+        header { background: #4caf50; color: #fff; padding: 20px 0; text-align: center; }
+        nav { background: #388e3c; padding: 10px 0; }
+        nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        .container { max-width: 1000px; margin: 30px auto; padding: 20px; background: #fff; border-radius: 8px; }
+        h2 { color: #4caf50; }
+        .pets { display: flex; flex-wrap: wrap; gap: 20px; }
+        .pet-card {
+            flex: 1 1 220px;
+            background: #f1f8e9;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .pet-card img { width: 120px; height: 120px; object-fit: cover; border-radius: 50%; }
+        footer { background: #4caf50; color: #fff; text-align: center; padding: 15px 0; margin-top: 40px; }
+        @media (max-width: 700px) {
+            .pets { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Happy Paws Pet Shop</h1>
+        <p>Your one-stop shop for happy, healthy pets!</p>
+    </header>
+    <nav>
+        <a href="#pets">Pets</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container" id="pets">
+        <h2>Our Pets</h2>
+        <div class="pets">
+            <div class="pet-card">
+                <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=facearea&w=400&h=400" alt="Dog">
+                <h3>Dogs</h3>
+                <p>Friendly and loyal companions. Various breeds available.</p>
+            </div>
+            <div class="pet-card">
+                <img src="https://images.unsplash.com/photo-1518715308788-3005759c61e9?auto=format&fit=facearea&w=400&h=400" alt="Cat">
+                <h3>Cats</h3>
+                <p>Playful and affectionate felines. Find your purrfect friend.</p>
+            </div>
+            <div class="pet-card">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=facearea&w=400&h=400" alt="Rabbit">
+                <h3>Rabbits</h3>
+                <p>Soft, gentle, and adorable. Great for families.</p>
+            </div>
+            <div class="pet-card">
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=facearea&w=400&h=400" alt="Bird">
+                <h3>Birds</h3>
+                <p>Colorful and cheerful. Parrots, canaries, and more.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="about">
+        <h2>About Us</h2>
+        <p>
+            Happy Paws Pet Shop has been serving pet lovers since 2010. We are passionate about connecting families with their perfect pets and providing quality pet supplies. Our staff is knowledgeable and always ready to help you choose the right companion.
+        </p>
+    </div>
+    <div class="container" id="contact">
+        <h2>Contact</h2>
+        <p>
+            <strong>Address:</strong> 123 Pet Lane, Animal City<br>
+            <strong>Phone:</strong> (123) 456-7890<br>
+            <strong>Email:</strong> info@happypawspetshop.com
+        </p>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <footer>
+        &copy; 2024 Happy Paws Pet Shop. All rights reserved.
+    </footer>
+</body>
+</html>
